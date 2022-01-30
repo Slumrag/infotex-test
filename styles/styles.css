@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	margin: 50px auto;
+}
+
+.table-container {
+	flex-direction: column;
+	align-items: center;
+}
+.table-container,
+.form-container {
+	display: flex;
+	justify-content: center;
+}
+.button {
+	cursor: pointer;
+	padding: 10px;
+	background-color: rgb(209, 208, 208);
+	border: none;
+	border-radius: 5px;
+}
+.button:hover {
+	background-color: grey;
+}
+/*table style*/
+.content-table {
+	max-width: 50vmax;
+	cursor: default;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.table-head {
+	padding: 20px;
+	border-bottom: 3px solid;
+}
+.table-header-cell {
+	padding: 5px 10px;
+	border: 1px solid grey;
+}
+.header-cell-container {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.button-sort {
+	background: transparent;
+	border-radius: 0px;
+	width: 20px;
+	height: 20px;
+	border: 10px solid transparent;
+	border-top: 10px solid lightgray;
+	padding: 0px;
+}
+.button-sort:hover {
+	border-top: 10px solid gray;
+	background: transparent;
+}
+/* special class toggles when sort boton is pressed  */
+.button-sort-rev {
+	transform: rotate(0.5turn);
+}
+.hide-icon {
+	margin-bottom: 4px;
+	cursor: pointer;
+	max-width: 15px;
+}
+.hide-icon:hover {
+	transform: scale(1.1);
+}
+.show-button {
+	display: none;
+	margin: 10px 0 10px auto;
+}
+
+.table-header-cell:nth-child(2) {
+	width: 20%;
+}
+.table-header-cell:nth-child(3) {
+	width: 45%;
+}
+.table-row:nth-child(even) {
+	background-color: rgb(209, 208, 208);
+}
+.table-cell {
+	padding: 5px;
+	border: 1px solid grey;
+	white-space: normal;
+	overflow: hidden;
+}
+.col-first-name,
+.col-last-name,
+.col-eye-color {
+	text-align: center;
+}
+.col-about {
+	line-height: 1.5rem;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; /* number of lines */
+}
+.col-eye-color {
+	color: transparent;
+}
+.eye {
+	background: #000;
+	margin: auto;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+/* form-style */
+.form-container {
+	position: fixed;
+	left: 75vw;
+	top: 10vh;
+}
+.append-form {
+	position: relative;
+	display: none;
+	padding: 20px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	flex-direction: column;
+	background: white;
+	width: min-content;
+}
+.text-input {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.textarea {
+	width: 100%;
+	resize: vertical;
+}
+.append-button {
+	font-weight: bold;
+	font-size: 1rem;
+}
+.cancel-button {
+	margin: 5px;
+	padding: 5px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+/* pages */
+.nav-container {
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
+.nav-button {
+	font-weight: bold;
+	margin: 0px 5px;
+	min-width: 40px;
+}
+.nav-button-selected {
+	border: 1px solid black;
+	background: grey;
+	color: white;
+}

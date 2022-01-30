@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-proj</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-container">
+            <div class="button-container
+            "><button class="button show-button">Показать все столбцы</button></div>
+            <!-- button-container -->
+            <table class="content-table">
+                <thead class="table-head">
+                    <tr class="table-row">
+                        <th class="table-header-cell" id="0">
+                            <img class="hide-icon"src="icons/hide-icon.svg" alt="icon">
+                            <div class="header-cell-container">
+                                <span class="header-text">Имя</span>
+                                <button class="button button-sort" id="firstName"></button>
+                            </div>
+                        </th>
+                        <th class="table-header-cell" id="1">
+                            <img class="hide-icon" src="icons/hide-icon.svg" alt="icon">
+                            <div class="header-cell-container">
+                                <span class="header-text">Фамилия</span>
+                                <button class="button button-sort" id="lastName"></button>
+                            </div>
+                        </th>
+                        <th class="table-header-cell" id="2">
+                            <img class="hide-icon" src="icons/hide-icon.svg" alt="icon">
+                            <div class="header-cell-container">
+                                <span class="header-text">Описание</span>
+                                <button class="button button-sort" id="about"></button>
+                            </div>
+                        </th>
+                        <th class="table-header-cell" id="3">
+                            <img class="hide-icon" src="icons/hide-icon.svg" alt="icon">
+                            <div class="header-cell-container">
+                                <span class="header-text">Цвет глаз</span>
+                                <button class="button button-sort" id="eyeColor"></button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-cell">1</td>
+                        <td class="table-cell">2</td>
+                        <td class="table-cell">3</td>
+                        <td class="table-cell">4</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <!-- table-container -->
+        <div class="form-container">
+            <form  class="append-form">
+                <label  class="label" for="firstname">Имя</label>
+                <button class="button cancel-button">Закрыть</button>
+                <input  class="text-input" type="text" id="firstname">
+
+                <label class="label"  for="lastname">Фамилия</label>
+                <input class="text-input" type="text" id="lastname">
+
+                <label class="label"  for="description">Описание</label>
+                <textarea class="textarea" id="about" cols="30" rows="5"></textarea>
+                
+                <label class="label"  for="eye-color">Цвет глаз</label>
+                <input class="text-input" type="text" id="eye-color">
+                <input type="button" class="button append-button" value="Редактировать">
+            </form>
+        </div>
+        <!-- form-container -->
+        <div class="nav-container">
+            
+        </div>
+        <!-- /.nav-container -->
+    </div>
+    <!-- container -->
+</body>
+</html>
